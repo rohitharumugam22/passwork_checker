@@ -1,54 +1,58 @@
 # Password Strength Checker 
-A GUI-based tool that evaluates password security and provides real-time feedback and improvement suggestions.
+A GUI-based tool to evaluate password security and provide actionable improvement suggestions
 
-# Features
-Strength Assessment: Evaluates passwords based on multiple criteria
+# Key Features
+1. Real-time password strength assessment
 
-Visual Feedback: Color-coded strength indicator (Weak/Medium/Strong)
+2. Visual strength indicator (Weak/Medium/Strong)
 
-Actionable Suggestions: Specific tips to improve password security
+3. Specific improvement suggestions
 
-User-Friendly: Simple Tkinter-based GUI interface
+4. Criteria-based evaluation (length, character diversity)
+
+5. No external dependencies (pure Python)
 
 # Requirements
 Python 3.6+
 
-Tkinter (usually included with Python installations)
 
-Regex module (Python built-in)
+# Installation
 
+Clone repository (if applicable)
 
-# Run directly
-      python password_checker.py
+      bash
+
+      git clone https://github.com/rohitharumugam22/password_checker.git
+      
+      cd password-checker
+
+No additional installation required
 
 # Usage
-Launch the application
-
-Enter password in the text field
-
-Click "Check Strength" button
-
-Review strength rating and improvement suggestions
+      bash
+      python password_checker.py
+      
 
 # Evaluation Criteria
-The tool checks for:
 
-Minimum 8 characters length
+The tool checks passwords against these security standards:
 
-Uppercase letters (A-Z)
+Length: Minimum 8 characters (+1 point)
 
-Lowercase letters (a-z)
+Uppercase letters: At least one (A-Z) (+1 point)
 
-Numbers (0-9)
+Lowercase letters: At least one (a-z) (+1 point)
 
-Special characters (!@#$%^&*_+-=)
+Numbers: At least one digit (0-9) (+1 point)
 
+Special characters: At least one (!@#$%^&*_+-=) (+1 point)
 
-# Fundamental password security principles
+# Scoring System
+      Points	Rating
+      
+      0-1      Very Weak
+      
+      2-3      Medium	
 
-Regular expression pattern matching
-
-GUI development with Tkinter
-
-Input validation techniques
+      4-5      Strong	
 
